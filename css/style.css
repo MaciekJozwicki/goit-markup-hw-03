@@ -107,6 +107,8 @@ ul {
 .hero {
     background-color: var(--color-background);
     padding: 200px 452px 280px 452px;
+    text-align: center;
+    min-width: 1600px;
 }
 .hero-header {
     font-size: 44px;
@@ -116,6 +118,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    padding-bottom: 30px;
     
 }
 .hero-button {
@@ -126,10 +129,7 @@ ul {
     width: 200px;
     border: none;
     border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 200px;
     
-
 }
 .hero-button:hover {
     cursor: pointer;
@@ -179,9 +179,11 @@ ul {
 .team h2 {
     font-size: 36px;
     font-weight: bold;
+    text-align: center;
     letter-spacing: 0.03em;
     padding-top: 94px;
     padding-bottom: 50px;
+
 }
 .team-name {
     font-size: 16px;
@@ -194,9 +196,6 @@ ul {
     font-size: 16px;
     letter-spacing: 0.03em;
 } */
-.team h2 {
-    text-align: center;
-}
 .team ul {
     display: flex;
     gap: 30px;
@@ -211,14 +210,13 @@ border-radius: 0px 0px 4px 4px;
 background: #FFFFFF;
 }
 .team-item h3 {
-padding: 30px 99px 59px 99px;
+    padding: 30px 99px 10px 99px;
 }
 .team-item p {
     color: var(--color-text);
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 10px;
     padding-bottom: 30px;
 }
 
