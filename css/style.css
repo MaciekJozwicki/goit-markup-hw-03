@@ -20,6 +20,9 @@ ul {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 .section {
     padding-top: 94px;
@@ -37,6 +40,7 @@ ul {
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 0.03em;
+    padding-left: 15px;
 }
 .logo-header {
     color: var(--color-logohead);
@@ -62,16 +66,19 @@ ul {
     text-decoration: none;
     letter-spacing: 0.02em;
     font-weight: 500;
+    
 }
 .contact:hover, .contact:focus {
     color: var(--color-logo);
     cursor: pointer;
 }
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header-flex {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    border-bottom: 1px solid #ECECEC;
     padding: 32px 0;
 }
 .header-flex-nav {
@@ -79,26 +86,15 @@ ul {
     align-items: center;
     
 }
-.header-flex-nav > a {
-    margin-left: 15px;
-    
-}
-.header-flex-links ul {
+.header-flex-links-list {
     display: flex;
-    margin-left: 93px;
-    
-}
-.header-flex-links li {
-    /* margin: 0 46px; */
-    padding-right: 46px;
+    padding-left: 93px;
+    gap: 46px;
     
 }
 .header-flex-contact {
-    margin-right: 27px;
-    
-}
-.contact {
-    padding-left: 50px;
+    display:flex;
+    gap: 50px;
     
 }
 
@@ -106,29 +102,33 @@ ul {
 
 .hero {
     background-color: var(--color-background);
-    padding: 200px 452px 280px 452px;
+    /* padding: 200px 452px 280px 452px; */
     text-align: center;
     min-width: 1600px;
+    display: flex;
+    flex-direction: column;
 }
 .hero-header {
     font-size: 44px;
     line-height: 1.36;
     color: var(--color-white);
-    font-weight: black;
+    font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 30px;
+    padding-top: 200px;
+    max-width: 696px;
+    margin-bottom: 30px;
     
 }
 .hero-button {
     background-color: var(--color-logo);
     letter-spacing: 0.06em;
     font-weight: bold;
-    height: 50px;
-    width: 200px;
     border: none;
     border-radius: 4px;
+    margin-bottom: 200px;
+    padding: 10px 41px 10px 42px;
     
 }
 .hero-button:hover {
@@ -141,9 +141,8 @@ ul {
     color: var(--color-white)
 }
 /* INDEX EXAMPLE */
-.example ul {
+.example-list {
     display: flex;
-    margin: 0px 15px;
     gap: 30px;
 }
 .example-header {
@@ -159,29 +158,31 @@ ul {
     color: var(--color-text);
 }
 /* INDEX WHAT WE DO */
-.what-we-do ul {
+.what-we {
+   padding-top: 0px;
+}
+.what-we-do-list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.what-we-do h2 {
+.what-we-do-title {
     text-align: center;
     margin-bottom: 50px;
-}
-.what-we-do-header {
     font-size: 36px;
     font-weight: bold;
 }
 /* INDEX TEAM */
 .team {
     background-color: var(--color-whiteF5);
+    padding: 94px 0;
 }
-.team h2 {
+.team-title {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 94px;
+    /* padding-top: 94px; */
     padding-bottom: 50px;
 
 }
@@ -189,18 +190,14 @@ ul {
     font-size: 16px;
     font-weight: medium;
     letter-spacing: 0.03em;
+    
 
 }
-/* .team-job {
-    color: var(--color-text);
-    font-size: 16px;
-    letter-spacing: 0.03em;
-} */
-.team ul {
+.team-list {
     display: flex;
     gap: 30px;
     justify-content: center;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
 }
 .team-item {
 box-shadow: 0px 2px 1px 0px #00000033;
@@ -209,15 +206,18 @@ box-shadow: 0px 1px 3px 0px #0000001F;
 border-radius: 0px 0px 4px 4px;
 background: #FFFFFF;
 }
-.team-item h3 {
+.team-item-name {
     padding: 30px 99px 10px 99px;
 }
-.team-item p {
+.team-item-job {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.team-job {
     color: var(--color-text);
     font-size: 16px;
     letter-spacing: 0.03em;
-    text-align: center;
-    padding-bottom: 30px;
+    
 }
 
 /* PORTFOLIO CONTENT */
@@ -278,7 +278,7 @@ padding: 20px 24px;
 .filter {
     gap: 9px;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 /* FOOTER */
