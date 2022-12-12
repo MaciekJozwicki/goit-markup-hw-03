@@ -40,7 +40,6 @@ ul {
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 0.03em;
-    padding-left: 15px;
 }
 .logo-header {
     color: var(--color-logohead);
@@ -79,16 +78,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 32px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .header-flex-nav {
     display: flex;
     align-items: center;
-    
+    gap: 93px;
 }
 .header-flex-links-list {
     display: flex;
-    padding-left: 93px;
     gap: 46px;
     
 }
@@ -102,7 +101,7 @@ ul {
 
 .hero {
     background-color: var(--color-background);
-    /* padding: 200px 452px 280px 452px; */
+    padding: 200px 452px 280px 452px;
     text-align: center;
     min-width: 1600px;
     display: flex;
@@ -116,7 +115,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     max-width: 696px;
     margin-bottom: 30px;
     
@@ -127,7 +126,7 @@ ul {
     font-weight: bold;
     border: none;
     border-radius: 4px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     padding: 10px 41px 10px 42px;
     
 }
@@ -174,8 +173,12 @@ ul {
 }
 /* INDEX TEAM */
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-color {
     background-color: var(--color-whiteF5);
-    padding: 94px 0;
+    
 }
 .team-title {
     font-size: 36px;
@@ -183,7 +186,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     /* padding-top: 94px; */
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 .team-name {
@@ -284,7 +287,8 @@ padding: 20px 24px;
     background-color: var(--color-background);
 }
 .footer-content {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     color: var(--color-white);
